@@ -1,0 +1,88 @@
+.form-container {
+
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+ margin-top: 20px;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    margin-bottom: 20px;
+  }
+   .form-group form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  
+  label {
+
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+ .form-group button[type="submit"] {
+    display: block;
+   margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  /* Style the dropdown container */
+.select-container {
+    position: relative;
+  }
+  
+  /* Style the select element */
+  select#categories {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    appearance: none; /* Remove default styling on macOS */
+    -webkit-appearance: none; /* Remove default styling on macOS */
+    -moz-appearance: none; /* Remove default styling on Firefox */
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 10px 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the options in the dropdown */
+  select#categories option {
+    color: #333; /* Text color */
+    background-color: #fff; /* Background color */
+  }
+  
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional: Add styles for form validation errors */
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
