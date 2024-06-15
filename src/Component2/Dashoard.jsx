@@ -60,8 +60,11 @@ const Dashboard = ({ token }) => {
       return orderDate.isSame(selectedDate, 'day');
     });
 
-    console.log('Filtered orders:', filteredOrders);
+    // console.log('Filtered orders:', filteredOrders);
     setSellToday(filteredOrders);
+
+
+    console.log(sellToday)
   };
 
   const handleDateChange = (date) => {
@@ -165,7 +168,7 @@ const Dashboard = ({ token }) => {
             onChange={handleDateChange}
           />
           </div>
-          {sellToday > 0 ? (
+          {sellToday && (
             sellToday.map((order) => (
               <div
                 key={order.id}
@@ -187,9 +190,7 @@ const Dashboard = ({ token }) => {
                 </p>
               </div>
             ))
-          ) : (
-            <p>No orders for the selected date.</p>
-          )}
+          ) }
         </div>
       )}
 

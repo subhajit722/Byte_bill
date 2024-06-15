@@ -24,7 +24,7 @@ const AddItems = ({ token }) => {
     console.log(token);
     try {
       const response = await axios.post(
-        `http://192.168.1.4:5000/api/item/items`,
+        `${apiurl}api/item/items`,
         {
           itemname: itemData.itemName,
           category: itemData.categories,
